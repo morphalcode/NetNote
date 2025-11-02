@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1036.0" stylesheets="/client/CSS/BackgroundPanes.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.InterfaceCtrl">
+   <children>
+      <fx:include fx:id="currentNoteArea" source="../components/CurrentNoteArea.fxml" />
+      <fx:include fx:id="titleList" source="../components/TitleList.fxml" />
+      <fx:include fx:id="collectionsMenu" source="../components/CollectionsMenu.fxml" />
+      <fx:include fx:id="searchBar" source="../components/SearchBar.fxml" />
+      <fx:include fx:id="mainButtons" source="../components/MainButtons.fxml" />
+      <fx:include fx:id="filesSection" source="../components/FilesSection.fxml" />
+      <Label fx:id="netNoteLogo" layoutX="24.0" layoutY="26.0" text="NetNote" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Courier New Bold" size="37.0" />
+         </font>
+      </Label>
+       <SplitMenuButton fx:id="languageMenu" layoutX="765.0" layoutY="65.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" />
+      <MenuButton fx:id="filterButton" layoutX="273.0" layoutY="115.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="125" text="%filterButton">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/client/images/icons/FilterIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </MenuButton>
+      <Circle fill="#FFCFEF" layoutX="241.0" layoutY="32.0" radius="16.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="353.0" layoutY="59.0" radius="21.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="502.0" layoutY="32.0" radius="16.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="874.0" layoutY="38.0" radius="21.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="656.0" layoutY="32.0" radius="21.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="241.0" layoutY="32.0" radius="16.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="353.0" layoutY="59.0" radius="21.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="502.0" layoutY="32.0" radius="16.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="874.0" layoutY="38.0" radius="21.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <Circle fill="#FFCFEF" layoutX="656.0" layoutY="32.0" radius="21.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3" />
+      <ToggleButton fx:id="tagsButton" layoutX="845.0" layoutY="65.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="100" styleClass="tags-toggle-button" text="%tagsButton" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/client/images/icons/TagsIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </ToggleButton>
+      <Button fx:id="clearAllButton" layoutX="3.0" layoutY="115.0" mnemonicParsing="false" onAction="#deselectAllTags" prefHeight="35.0" prefWidth="125.0" styleClass="clear-all-button" text="%clearAllButton" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/client/images/icons/BroomIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ToggleButton fx:id="matchButton" layoutX="138.0" layoutY="115.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="125.0" styleClass="match-button" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </ToggleButton>
+      <Label fx:id="tagsDisplayLabel" layoutX="408.0" layoutY="115.0" prefHeight="35.0" prefWidth="625.0" style="-fx-background-color: #CCCCCC;" />
+   </children>
+</AnchorPane>

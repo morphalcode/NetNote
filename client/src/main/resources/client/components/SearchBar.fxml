@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="searchBarAnchorPane" stylesheets="/client/CSS/BackgroundPanes.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.components.SearchBarCtrl">
+        <ListView fx:id="searchBarListView" layoutX="117.0" layoutY="100.0" prefHeight="184.0" prefWidth="200.0" />
+        <TextField styleClass="search-field" fx:id="searchBar" layoutX="117.0" layoutY="65.0" prefHeight="35.0" prefWidth="200.0" promptText="%searchBar" />
+</Pane>

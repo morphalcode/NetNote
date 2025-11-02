@@ -1,0 +1,60 @@
+/* NEW CLASS */
+/* REFRESH BUTTON */
+.refresh-button {
+    -fx-background-color: #0659A7;
+}
+
+.refresh-button:hover {
+    -fx-background-color: #04437D;
+}
+
+
+/* NEW CLASS */
+/* ADD BUTTON */
+.add-button {
+    -fx-background-color: #126711;
+}
+
+.add-button:hover {
+    -fx-background-color: #0D4C0C;
+}
+
+
+/* NEW CLASS */
+/* DELETE BUTTON */
+.delete-button {
+    -fx-background-color: #A60707;
+}
+
+.delete-button:hover {
+    -fx-background-color: #7B0505;
+}
+
+/* NEW CLASS */
+/* EDIT COLLECTIONS BUTTON*/
+
+/* NEW CLASS */
+/* MarkDown BUTTON */
+.MarkDown-toggle-button {
+    -fx-background-color: #515151;
+}
+
+.MarkDown-toggle-button:hover {
+    -fx-background-color: #404040;
+}
+
+.MarkDown-toggle-button:selected:hover {
+    -fx-background-color: #252525;
+}
+
+.MarkDown-toggle-button:selected {
+    -fx-background-color: #000000;
+}
+
+.main-button-pane {
+    -fx-background-color: #9DBDFF;
+}
+
+.note-area {
+    -fx-background-color: #F1F3C2;
+}

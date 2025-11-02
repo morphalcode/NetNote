@@ -1,0 +1,81 @@
+.collection-pane {
+    -fx-background-color:#9DBDFF;
+}
+
+.app-background {
+    -fx-background-color: #9DBDFF;
+}
+
+.edit-collection {
+    -fx-background-color: #8B5DFF;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #6A42C2;
+}
+
+.edit-collection:hover{
+    -fx-background-color: #6A42C2;
+}
+
+.list-view {
+    -fx-background-color: #FFE2E2;
+    -fx-border-width:2px;
+    -fx-border-color: #0A5EB0;
+}
+
+.search-field {
+    -fx-border-color: #0A5EB0;
+    -fx-border-width: 2px;
+}
+
+#mainAnchorPane{
+    -fx-background-color: #9DBDFF;
+}
+
+/* NEW CLASS */
+/* TAGS BUTTON */
+.tags-toggle-button {
+    -fx-background-color: #7F4902;
+}
+
+.tags-toggle-button:hover {
+    -fx-background-color: #754302;
+}
+
+.tags-toggle-button:selected:hover {
+    -fx-background-color: #643901;
+}
+
+.tags-toggle-button:selected {
+    -fx-background-color: #4F2D00;
+}
+
+
+/* NEW CLASS */
+/* CLEAR ALL BUTTON */
+.clear-all-button {
+    -fx-background-color: #7B0505;
+}
+
+.clear-all-button:hover {
+    -fx-background-color: #5D0000;
+}
+
+
+/* NEW CLASS */
+/* MATCH BUTTON */
+.match-button {
+    -fx-background-color: #074C8C;
+}
+
+.match-button:hover {
+    -fx-background-color: #053E75;
+}
+
+.match-button:selected:hover {
+    -fx-background-color: #053460;
+}
+
+.match-button:selected {
+    -fx-background-color: #03223E;
+}

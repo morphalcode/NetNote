@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="580.0" stylesheets="/client/CSS/ButtonsStylesheet.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.CollectionInterfaceCtrl">
+   <children>
+      <ListView fx:id="collectionListView" prefHeight="178.0" prefWidth="179.0" />
+      <Button fx:id="addCollectionButton" layoutX="15.0" layoutY="187.0" mnemonicParsing="false" onAction="#createCollection" prefHeight="30.0" prefWidth="60.0" styleClass="add-button">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/client/images/icons/PlusIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="saveButton" layoutX="475.0" layoutY="187.0" mnemonicParsing="false" onAction="#editCollection" prefHeight="30.0" prefWidth="90.0" text="%addButton">
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/client/images/icons/SaveIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeCollectionButton" layoutX="104.0" layoutY="187.0" mnemonicParsing="false" onAction="#removeCollection" prefHeight="30.0" prefWidth="60.0" styleClass="delete-button">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/client/images/icons/TrashIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text layoutX="231.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%titleText" wrappingWidth="65.33671569824219">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="titleTextField" layoutX="310.0" layoutY="23.0" prefHeight="26.0" prefWidth="222.0" />
+      <Text layoutX="231.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%serverText" wrappingWidth="74.13670349121094">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="serverTextField" layoutX="310.0" layoutY="67.0" prefHeight="26.0" prefWidth="222.0" />
+      <Text layoutX="231.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%statusText" wrappingWidth="65.33671569824219">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="makeDefaultCollectionButton" layoutX="360.0" layoutY="187.0" mnemonicParsing="false" onAction="#setDefaultCollectionId" prefHeight="30.0" prefWidth="100.0" text="%makeDefaultButton">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="serverStatusText" layoutX="310.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%defaultStatus" wrappingWidth="222.39999999999986">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="231.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%actionText" wrappingWidth="65.33671569824219">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="actionText" layoutX="310.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%defaultAction" wrappingWidth="222.39999999999986">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
